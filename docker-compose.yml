@@ -10,7 +10,7 @@ services:
     environment:
       - REDDIT_CLIENT_ID=1IZObZfK2ueN2QXd0ZQizA
       - REDDIT_CLIENT_SECRET=asNUjE3hQ2hiI-PSEwacmTd7esYciw
-      - REDDIT_USER_AGENT=Shaheer
+      - REDDIT_USER_AGENT=Habib
       - POSTGRES_HOST=postgres
       - POSTGRES_PORT=5432
       - POSTGRES_DB=reddit_db
