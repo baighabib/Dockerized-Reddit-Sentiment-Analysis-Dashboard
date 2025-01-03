@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8501:8501"
+    environment:
+      - REDDIT_CLIENT_ID=1IZObZfK2ueN2QXd0ZQizA
+      - REDDIT_CLIENT_SECRET=asNUjE3hQ2hiI-PSEwacmTd7esYciw
+      - REDDIT_USER_AGENT=Shaheer
+      - POSTGRES_HOST=postgres
+      - POSTGRES_PORT=5432
+      - POSTGRES_DB=reddit_db
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=Mujhenahipata123.
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:latest
+    container_name: postgres_container
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: reddit_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Mujhenahipata123.
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

@@ -1,0 +1,9 @@
+pandas
+textblob
+psycopg2-binary
+streamlit
+plotly
+schedule
+praw
+wordcloud
+flask
