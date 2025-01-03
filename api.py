@@ -12,7 +12,7 @@ app = Flask(__name__)
 reddit = praw.Reddit(
     client_id=os.getenv('REDDIT_CLIENT_ID', '1IZObZfK2ueN2QXd0ZQizA'),
     client_secret=os.getenv('REDDIT_CLIENT_SECRET', 'asNUjE3hQ2hiI-PSEwacmTd7esYciw'),
-    user_agent=os.getenv('REDDIT_USER_AGENT', 'Shaheer')
+    user_agent=os.getenv('REDDIT_USER_AGENT', 'Habib')
 )
 
 # PostgreSQL Connection
